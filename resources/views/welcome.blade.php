@@ -19,9 +19,14 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+            <link rel="stylesheet" href="/css/styles.css">
+            <script src="/js/script.js"></script>
+
     </head>
     <body>
         <h1>algum título</h1>
+        <img src="/img/PALESTRAS.jpg" alt="Banner"
         @if(10 > 15)
             <p>A condição é true</p>
         @endif
@@ -44,6 +49,7 @@
         @endfor
 
         @foreach($nomes as $nome)
+            <p>{{ $loop->index }}</p>
             <p>{{ $loop->index }}</p>
             <p>{{ $nome }}</p>
         @endforeach
